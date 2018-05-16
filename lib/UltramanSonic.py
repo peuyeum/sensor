@@ -10,6 +10,7 @@ def readm():
 		except MySQLdb.OperationalError, message:
 		errorget = '(1094, "Unknown database \'python_db\'")'
 		varis = str(message)==errorget
+		print errorget
 		if varis:
 			cursor.execute('create database python_db')
 		while True:
@@ -18,3 +19,4 @@ def readm():
 			cursor.execute("INSERT INTO py_test(jarak) VALUES(concat(%s,'cm'))", [readed[0:readlen]])
 			conn.commit()
 			print ("INSERT INTO py_test(jarak) VALUES(concat(%s,'cm'))", [readed[0:readlen]])
+			
