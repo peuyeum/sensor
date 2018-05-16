@@ -20,4 +20,7 @@ def readm(hos, use, pas, por, dbname):
 			cursor.execute("INSERT INTO py_test(jarak) VALUES(concat(%s,'cm'))", [readed[0:readlen]])
 			conn.commit()
 			print ("INSERT INTO py_test(jarak) VALUES(concat(%s,'cm'))", [readed[0:readlen]])
-			
+
+def posInput(hos, use, pas, por, dbname):
+	ArduinoSerial = serial.Serial(por, 9600)
+	conn=psycopg2.connect("dbname='"+dbname+"' user='"+use+"' password='"+pas+"'")			
