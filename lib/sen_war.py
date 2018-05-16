@@ -25,3 +25,5 @@ while 1:
 		
 		# Insert new employee
 			cursor.execute(add_logdata, dataB)
+			
+		# 
