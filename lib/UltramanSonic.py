@@ -23,4 +23,6 @@ def readm(hos, use, pas, por, dbname):
 
 def posInput(hos, use, pas, por, dbname):
 	ArduinoSerial = serial.Serial(por, 9600)
-	conn=psycopg2.connect("dbname='"+dbname+"' user='"+use+"' password='"+pas+"'")			
+	conn=psycopg2.connect("dbname='"+dbname+"' user='"+use+"' password='"+pas+"'")cursor = conn.cursor()
+	try:
+		result = cursor.execute("select * from py_ultraman_sonic")			
