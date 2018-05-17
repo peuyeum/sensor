@@ -18,4 +18,4 @@ while 1:
 	print ('--'+ data)
 	
 	add_logdata = ("INSERT INTO logdata"
-				
+				"(tgl, serial) "
