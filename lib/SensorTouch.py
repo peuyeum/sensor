@@ -9,3 +9,4 @@ def test()
 		cursor.execute('use arduino_db')
 	except MySQLdb.OperationalError, message:
 		errorget = '(1049, "Unknown database \'arduino_db\'")'
+		varis = str(message)==errorget
