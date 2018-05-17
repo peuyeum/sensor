@@ -16,3 +16,6 @@ while 1:
 	#print data
 	data=data.strip()
 	print ('--'+ data)
+	
+	add_logdata = ("INSERT INTO logdata"
+				
