@@ -11,6 +11,7 @@ def readm():
 		errorget = '(1094, "Unknown database \'python_db\'")'
 		varis = str(message)==errorget
 		print errorget
+		print str(message)
 		if varis:
 			cursor.execute('create database python_db')
 		while True:
