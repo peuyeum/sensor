@@ -26,4 +26,4 @@ while 1:
 		# Insert new employee
 			cursor.execute(add_logdata, dataB)
 			
-		# 
+		# Make sure data is committed to the database
