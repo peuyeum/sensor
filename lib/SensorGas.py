@@ -12,3 +12,5 @@ ser = serial.Serial('COM6', 9600)
 temp = ''
 while 1:
 data=ser.readline().rstrip('\n')
+#print data
+data=data.strip()
