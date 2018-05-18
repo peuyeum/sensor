@@ -27,4 +27,6 @@ while 1:
 			cursor.execute(add_logdata, dataB)
 			
 		# Make sure data is committed to the database
-		cnx.commit()  
+		cnx.commit()
+		
+cursor
