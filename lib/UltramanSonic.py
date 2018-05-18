@@ -13,5 +13,6 @@ def readm():
 		if varis:
 			cursor.execute('create database python_db')
 		while True:
-			mulai
+			readed = str(ArduinoSerial.readline())
+			readlen = len(readed)-2
 			
