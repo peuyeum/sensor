@@ -10,3 +10,5 @@ def test()
 	except MySQLdb.OperationalError, message:
 		errorget = '(1049, "Unknown database \'arduino_db\'")'
 		varis = str(message)==errorget    
+		if varis:
+			cursor.execute('create database arduino_db')
