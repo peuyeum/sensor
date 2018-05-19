@@ -12,3 +12,5 @@ def test()
 		varis = str(message)==errorget    
 		if varis:
 			cursor.execute('create database arduino_db')
+			cursor.execute('use arduino_db')
+			cursor.execute('CREATE TABLE hasil_serial(hasil_uji INT(10))')
