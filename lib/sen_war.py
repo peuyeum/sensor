@@ -29,4 +29,4 @@ while 1:
 		# Make sure data is committed to the database
 		cnx.commit()
 		
-cursor
+cursor.close
