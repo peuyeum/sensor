@@ -28,4 +28,7 @@ def posInput(hos, use, pas, por, dbname):
 		result = cursor.execute("select * from py_ultraman_sonic")		
 		conn.rollback()
 		errorget = "relation \"py_ultraman_sonic\" does not exist\nLINE 1: select * from bar"
-		varis = str(message)[0:43]==errorget[0:43]		
+		varis = str(message)[0:43]==errorget[0:43]
+		print errorget[0:43]
+		print str(message)[0:43]
+		print varis		
