@@ -7,3 +7,4 @@ def readm():
 	cursor = conn.cursor()
 	try:
 		curso.execute('use python_db')
+		except MySQLdb.OperationalError, message:
