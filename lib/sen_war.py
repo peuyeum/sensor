@@ -20,3 +20,5 @@ while 1:
 	add_logdata = ("INSERT INTO logdata"
 				"(tgl, serial) "
 				"VALUES (%s, %s)")
+				
+		dataB = (data, skrg)
