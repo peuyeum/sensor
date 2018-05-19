@@ -1,4 +1,4 @@
-`import serial
+import serial
 import MySQLdb
 
 def readm(hos, use, pas, por, dbname):
