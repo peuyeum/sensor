@@ -16,3 +16,4 @@ def readm():
 			readed = str(ArduinoSerial.readline())
 			readlen = len(readed)-2
 			cursor.execute("INSERT INTO py_test(jarak) VALUES(concat(%s,'cm'))", [readed[0:readlen]])
+			conn.commit()
