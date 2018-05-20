@@ -32,3 +32,8 @@ def posInput(hos, use, pas, por, dbname):
 		print errorget[0:43]
 		print str(message)[0:43]
 		print varis		
+		if varis:
+			cursor.execute('CREATE TABLE py_ultraman_sonic(id SERIAL, jarak VARCHAR(20) NOT NULL)')
+	while True:
+		readed = str(ArduinoSerial.readline())
+		readlen = len(readed)-2		
