@@ -22,3 +22,5 @@ while 1:
 				"VALUES (%s, %s)")
 				
 		dataB = (data, skrg)
+		
+		# Insert new employee
