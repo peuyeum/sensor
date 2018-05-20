@@ -15,3 +15,5 @@ data=ser.readline().rstrip('\n')
 #print data
 data=data.strip()
 print ('--'+ data)
+
+add_logdata = ("INSERT INTO logdata  "
