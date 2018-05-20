@@ -3,6 +3,9 @@ import serial
 from datetime import date, datetime, timedelta
 import mysql.connector
 
+cnx = mysql.connector.connect(user='root', database='sensorgas')
+cursor = cnx.cursor()
+
 ser = serial.Serial('COM6', 9600)
 temp = ''
 while 1:
