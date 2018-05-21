@@ -24,3 +24,4 @@ while 1:
 		dataB = (data, skrg)
 		
 		# Insert new employee
+			cursor.execute(add_logdata, dataB)
