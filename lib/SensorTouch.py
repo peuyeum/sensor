@@ -6,4 +6,5 @@ def test()
 	conn = MySQLdb.connect('localhost', 'root', '', 'arduino_db')
 	cursor = conn.cursor()
 	try:
-		cursor.execute('use arduino_db') 
+		cursor.execute('use arduino_db')
+	except MySQLdb.OperationalError, message:
