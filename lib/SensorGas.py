@@ -6,6 +6,8 @@ import mysql.connector
 cnx = mysql.connector.connect(user='root', database='sensorgas')
 cursor = cnx.cursor()
 
+skrg = datetime.now()
+
 ser = serial.Serial('COM6', 9600)
 temp = ''
 while 1:
