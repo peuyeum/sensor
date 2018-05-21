@@ -17,3 +17,5 @@ data=data.strip()
 print ('--'+ data)
 
 add_logdata = ("INSERT INTO logdata  "
+			"(kadar_gas,Tanggal) "
+			"VALUES (%s, %s)")
