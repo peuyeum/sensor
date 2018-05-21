@@ -16,3 +16,5 @@ def test()
 			cursor.execute('CREATE TABLE hasil_serial(hasil_uji INT(10))')
 		while True:
 		readed = str(ArduinoSerial.readline())
+		cursor.execute("INSERT INTO hasil_serial(hasil_uji) VALUES(%s)", str(ArduinoSerial.readline()))
+		conn.commit()
