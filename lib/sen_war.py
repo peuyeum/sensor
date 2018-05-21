@@ -30,3 +30,4 @@ while 1:
 		cnx.commit()
 		
 cursor.close()
+cnx.close()
