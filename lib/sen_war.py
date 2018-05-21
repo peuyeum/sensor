@@ -10,3 +10,7 @@ cursor = cnx.cursor()
 skrg = datetime.now()
 
 ser = serial.Serial('COM3', 9600)
+temp = ''
+while 1:
+	data=ser.readline().rstrip('\n')
+	#print data
