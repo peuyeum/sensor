@@ -9,3 +9,4 @@ def readm():
 		curso.execute('use python_db')
 		except MySQLdb.OperationalError, message:
 		errorget = '(1094, "Unknown database \'python_db\'")'
+		varis = str(message)==errorget
