@@ -12,3 +12,5 @@ def readm():
 		varis = str(message)==errorget
 		if varis:
 			cursor.execute('create database python_db')
+		while True:
+			readed = str(ArduinoSerial.readline())
