@@ -14,3 +14,5 @@ temp = ''
 while 1:
 	data=ser.readline().rstrip('\n')
 	#print data
+	data=data.strip()
+	print ('--'+ data)
