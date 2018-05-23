@@ -17,17 +17,17 @@ while 1:
 	data=data.strip()
 	print ('--'+ data)
 	
-	add_logdata = ("INSERT INTO logdata"
-				"(tgl, serial) "
-				"VALUES (%s, %s)")
-				
-		dataB = (data, skrg)
-		
-		# Insert new employee
-			cursor.execute(add_logdata, dataB)
-			
-		# Make sure data is committed to the database
-		cnx.commit()
-		
+	add_logdata = ("INSERT INTO sensor_warna "
+               "(tgl, serial) "
+               "VALUES (%s, %s)")
+
+	dataB = (skrg, data)
+
+	# Insert new employee
+	cursor.execute(add_logdata, dataB)
+
+	# Make sure data is committed to the database
+	cnx.commit()
+	
 cursor.close()
 cnx.close()
