@@ -9,7 +9,7 @@ def myInput(hos, use, pas, por, dbname):
 	try:
 		result = cursor.execute("select * from py_ultraman_sonic")
 	except MySQLdb.ProgrammingError, message:
-		errorget = "(1146, \"Table '"+dbname+".bar' doesn't exist\")"
+		errorget = "(1146, \"Table '"+dbname+".py_ultraman_sonic' doesn't exist\")"
 		varis = str(message)==errorget
 		print errorget
 		print str(message)
@@ -18,9 +18,9 @@ def myInput(hos, use, pas, por, dbname):
 	while True:
 		readed = str(ArduinoSerial.readline())
 		readlen = len(readed)-2		
-		cursor.execute("INSERT INTO py_test(jarak) VALUES(concat(%s,'cm'))", [readed[0:readlen]])
+		cursor.execute("INSERT INTO py_ultraman_sonic(jarak) VALUES(concat(%s,'cm'))", [readed[0:readlen]])
 		conn.commit()
-		print ("INSERT INTO py_test(jarak) VALUES(concat(%s,'cm'))", [readed[0:readlen]])
+		print ("INSERT INTO py_ultraman_sonic(jarak) VALUES(concat(%s,'cm'))", [readed[0:readlen]])
 
 def posInput(hos, use, pas, por, dbname):
 	ArduinoSerial = serial.Serial(por, 9600)
